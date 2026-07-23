@@ -45,7 +45,7 @@ Evaluating the baseline model yielded critical insights into dataset requirement
 
 | Confusion Matrix Evaluation | Training Loss & Convergence Curves |
 | :---: | :---: |
-| ![Confusion Matrix Diagnostic](./assets/confusion_matrix.png) | ![YOLO Learning Curves](./assets/YOLO_Training_Results_Graph.png.jpg) |
+| ![Confusion Matrix Diagnostic](./assets/confusion_matrix.png) | ![YOLO Learning Curves](./assets/YOLO_Training_Results_Graph.png) |
 | *Confusion matrix highlighting background false-negatives due to initial sample constraints.* | *Bounding box, segmentation mask, and classification loss curves.* |
 
 ---
