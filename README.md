@@ -1,4 +1,4 @@
-# 🧬 Automated PCR Agarose Gel Instance Segmentation (CVAT & YOLOv8)
+# 🧬 Automated PCR Agarose Gel Instance Segmentation: AI Model Training with CVAT & YOLOv8
 
 ## 📌 Project Overview
 Agarose gel electrophoresis analysis requires high precision to distinguish target PCR products, molecular ladders, wells, and degraded non-specific smearing. This project establishes an **end-to-end Computer Vision & Annotation Pipeline** designed to segment, classify, and evaluate molecular features in gel images using CVAT and YOLOv8-Seg.
