@@ -42,17 +42,21 @@ Evaluating the baseline model yielded critical insights into dataset requirement
    - *Root Cause:* Extreme class diversity across a low-volume initial dataset (~6 primary images with 9 classes) caused severe class imbalance.
 2. **Feature Overlap:**
    - High-luminance artifacts and faint ladder bands were occasionally conflated with target bands at high confidence thresholds ($>0.25$).
-  
-
-
-## 📊 Model Training & Diagnostic Metrics
-
-The segmentation pipeline was trained using **YOLOv8 Nano Segmentation (`yolov8n-seg.pt`)** on a GPU-accelerated environment across 50 epochs.
 
 | Confusion Matrix Evaluation | Training Loss & Convergence Curves |
 | :---: | :---: |
-| ![Confusion Matrix Diagnostic](./assets/confusion_matrix_diagnostic.png) | ![YOLO Learning Curves](./assets/metrics_learning_curves.jpg) |
+| ![Confusion Matrix Diagnostic](./assets/confusion_matrix.png) | ![YOLO Learning Curves](./assets/YOLO_Training_Results_Graph.png.jpg) |
 | *Confusion matrix highlighting background false-negatives due to initial sample constraints.* | *Bounding box, segmentation mask, and classification loss curves.* |
+
+---
+
+### 🔬 Model Inference & Validation Outputs
+
+Validation batch samples (`val_batch0_pred.jpg`) generated at the end of training to evaluate model generalization on gel lane features:
+
+<p align="center">
+  <img src="./assets/validation_predictions_preview.jpg" alt="Validation Predictions Preview" width="850"/>
+</p>
 
 ---
 
@@ -67,8 +71,3 @@ To transition this baseline model to production performance ($mAP > 0.85$):
 
 ---
 
-## 📸 Visual Previews
-
-| CVAT Polygon Annotation | Model Prediction Mask |
-| :---: | :---: |
-| ![CVAT Annotation](./assets/annotated_cvat_sample.png) | ![Prediction](./assets/predictions_preview.png) |
