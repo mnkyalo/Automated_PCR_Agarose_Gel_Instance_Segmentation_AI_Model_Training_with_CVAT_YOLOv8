@@ -1,1 +1,12 @@
-
+names:
+  0: Well
+  1: Artifact
+  2: DNA_Ladder
+  3: Gel_Lane
+  4: DNA_Band
+  5: Negative control
+  6: Control/No_Amp
+  7: Ladder_Band
+  8: DNA_Smear
+path: .
+train: train.txt
