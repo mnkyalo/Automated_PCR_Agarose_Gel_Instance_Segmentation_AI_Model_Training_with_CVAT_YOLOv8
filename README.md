@@ -29,9 +29,18 @@ Using **CVAT (Computer Vision Annotation Tool)**, an end-to-end multi-class inst
 
 ## 🔬 Model Training & Baseline Evaluation
 
-- **Architecture:** YOLOv8 Nano Segmentation (`yolov8n-seg.pt`)
-- **Hardware Platform:** Tesla T4 GPU (Google Colab)
-- **Training Setup:** 50 Epochs, Image Resolution 640x640
+### 🛠️ Tech Stack & Dependencies
+* **Core Frameworks:** Python, PyTorch, Ultralytics YOLOv8
+* **Data Annotation & Processing:** CVAT (Computer Vision Annotation Tool), OpenCV
+* **Hardware & Compute:** NVIDIA Tesla T4 GPU (Google Colab), CUDA 12.8
+
+---
+
+### ⚙️ Training Setup & Configuration
+* **Architecture:** YOLOv8 Nano Instance Segmentation (`yolov8n-seg.pt`)
+* **Epochs:** 50
+* **Image Resolution:** 640 × 640
+* **Batch Size:** 16
 
 ### 📊 Diagnostic Analysis & Error Diagnosis
 
